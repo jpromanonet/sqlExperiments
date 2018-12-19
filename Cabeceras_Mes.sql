@@ -1,5 +1,7 @@
+-- Declaracion de variables globales.
+
 DECLARE @ANIO INT,
-		@MES INT
+	@MES INT
 
 SET @ANIO = YYYY
 SET @MES = M
