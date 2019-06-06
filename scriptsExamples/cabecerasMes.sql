@@ -13,7 +13,10 @@ DECLARE @Fecha_Inicio_Mes DATE,
 		@Dia_Fin INT
 
 SET @Fecha_Inicio_Mes = DATEFROMPARTS(@ANIO,@MES,1) -- Arma el primer día del mes
-SET @Dia_Fin = DATEDIFF(DAY, @Fecha_Inicio_Mes, DATEADD(MONTH, 1, @Fecha_Inicio_Mes)) -- Cuenta los dias del mes para calcular el ultimo dia.
+SET @Dia_Fin = DATEDIFF(DAY, 
+						@Fecha_Inicio_Mes, 
+						DATEADD(MONTH, 1, 
+						@Fecha_Inicio_Mes)) -- Cuenta los dias del mes para calcular el ultimo dia.
 SET @Fecha_Fin_Mes = DATEFROMPARTS(@ANIO,@MES,@Dia_Fin) -- Arma el ultimo dia del mes
 
 -- Muestra las fechas 
