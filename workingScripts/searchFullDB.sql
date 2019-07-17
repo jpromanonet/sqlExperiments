@@ -1,5 +1,5 @@
-/* Declaro el valor que quiero buscar en la arquitectura de objetos .schema de la dB
--- Tener en cuenta que es MUY LENTO*/
+/* Declare the string you want to search in the whole dB.schema 
+-- Beware, it's REALLY SUPER SLOW but works.*/
 
 DECLARE @searchFor VARCHAR(200)
 SET @searchFor = 'Insert your string here'
