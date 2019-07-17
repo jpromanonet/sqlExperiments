@@ -11,6 +11,6 @@ SELECT COLUMN_NAME AS 'columnName',
        TABLE_NAME AS  'tableName'
 	FROM INFORMATION_SCHEMA.COLUMNS
 		WHERE COLUMN_NAME LIKE '%'+@mySearchObject+'%'
-			ORDER BY TableName,
-					 ColumnName;
+			ORDER BY tableName,
+					 columnName;
 
